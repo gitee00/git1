@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,27 +8,111 @@
     <link rel="stylesheet" href="./css/xiaomi.css">
 </head>
 
+
 <body>
-    <!-- 底部 -->
-    <div class="bottom_box">
-        <div style="width: 228px;height: 164px;padding: 3px;background: rgb(95, 87, 80);position: relative;">
+     
+    <header>
+        <div class="top">
+            <div class="cont">
+                <ul>
+                    <li>
+                        <a href="javascript:">小米商城 <span>|</span></a>
+                        <a href="javascript:">MIUI<span>|</span></a>
+                        <a href="javascript:">IoT<span>|</span></a>
+                        <a href="javascript:">云服务<span>|</span></a>
+                        <a href="javascript:">天星数科<span>|</span></a>
+                        <a href="javascript:">有品<span>|</span></a>
+                        <a href="javascript:">小爱开放平台<span>|</span></a>
+                        <a href="javascript:">企业团购<span>|</span></a>
+                        <a href="javascript:">资质证照<span>|</span></a>
+                        <a href="javascript:">协议规则<span>|</span></a>
+                        <a href="javascript:">下载app<span>|</span></a>
+                        <a href="javascript:">智能生活<span>|</span></a>
+                        <a href="javascript:">Select Location</a>
+                    </li>
+                </ul>
+                <div class="right">
+                    <ul>
+                        <li><a href="javascript:">登录 <span>|</span></a></li>
+                        <li><a href="javascript:">注册 <span>|</span></a></li>
+                        <li><a href="javascript:">消息通知</a></li>
+                    </ul>
+                    <div class="shop"><img src="img/999.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="top_nav">
+            <div class="img">
+                <img src="img/logo.png" width="56" height="56" alt="">
+            </div>
             <ul>
-                <li><img src="./img/82abdba456e8caaea5848a0cddce03db.png" width="25px"height="25px"alt="">保障服务</li>
-                <li><img src="./img/806f2dfb2d27978e33fe3815d3851fa3.png" width="25px"height="25px"alt="">企业服务</li>
-                <li><img src="./img/eded6fa3b897a058163e2485532c4f10.png" width="25px"height="25px"alt="">F码通道</li>
-                <li><img src="./img/43a3195efa6a3cc7662efed8e7abe8bf.png" width="25px"height="25px"alt="">米粉卡</li>
-                <li><img src="./img/f4846bca6010a0deb9f85464409862af.png" width="25px"height="25px"alt="">以旧换新</li>
-                <li><img src="./img/9a76d7636b08e0988efb4fc384ae497b.png" width="25px"height="25px"alt="">话费充值</li>
+                <li>Xiaomi手机</li>
+                <li>Redmi 红米</li>
+                <li>电视</li>
+                <li>笔记本</li>
+                <li>平板</li>
+                <li>家电</li>
+                <li>路由器</li>
+                <li>服务</li>
+                <li>社区</li>
+            </ul>
+            <div class="search">
+                <input type="text">
+                <div class="ipt">&#9819</div>
+            </div>
+        </div>
+    </header>
+     <!-- 中间轮播图 -->
+     <div class="conentList">
+        <div class="conentList_ul">
+            <ul>
+                <li>手机</li>
+                <li>电视</li>
+                <li>笔记本电脑</li>
+                <li>家电</li>
+                <li>出行 穿戴</li>
+                <li>智能 路由器</li>
+                <li>电源 配件</li>
+                <li>健康 儿童</li>
+                <li>耳机 音箱</li>
+                <li>生活 箱包</li>
             </ul>
         </div>
-        <div>
-            <img src="./img/d8a6d6d37904e22c72130e3e4ec79b41.jpg" width="100%"height="100%"alt="">
-        </div>
-        <div>
-            <img src="./img/0bdb0b3ff4e73fe2a6bf2f8fd399015e.png" width="100%"height="100%"alt="">        </div>
-        <div>
-            <img src="./img/35b3f906861db9d6472206e6d68318d9.jpeg" width="100%"height="100%"alt="">        </div>
+        <img class="conentList_lun" src="./img/lun.jpg" alt="">
     </div>
+    <script>
+        var img = document.getElementsByClassName('conentList_lun')[0]
+        var arr = ["./img/lun.jpg", "./img/lunbo.webp"]
+        var index = 0;
+        function b() {
+            if (index == 1) {
+                index = 0;
+            } else {
+                index++
+            }
+            img.src = arr[index];
+        }
+        setInterval("b()", 2000)
+    </script>
+        <!-- 底部 -->
+        <div class="bottom_box">
+            <div style="width: 228px;height: 164px;padding: 3px;background: rgb(95, 87, 80);position: relative;">
+                <ul>
+                    <li><img src="./img/82abdba456e8caaea5848a0cddce03db.png" width="25px"height="25px"alt="">保障服务</li>
+                    <li><img src="./img/806f2dfb2d27978e33fe3815d3851fa3.png" width="25px"height="25px"alt="">企业服务</li>
+                    <li><img src="./img/eded6fa3b897a058163e2485532c4f10.png" width="25px"height="25px"alt="">F码通道</li>
+                    <li><img src="./img/43a3195efa6a3cc7662efed8e7abe8bf.png" width="25px"height="25px"alt="">米粉卡</li>
+                    <li><img src="./img/f4846bca6010a0deb9f85464409862af.png" width="25px"height="25px"alt="">以旧换新</li>
+                    <li><img src="./img/9a76d7636b08e0988efb4fc384ae497b.png" width="25px"height="25px"alt="">话费充值</li>
+                </ul>
+            </div>
+            <div>
+                <img src="./img/d8a6d6d37904e22c72130e3e4ec79b41.jpg" width="100%"height="100%"alt="">
+            </div>
+            <div>
+                <img src="./img/0bdb0b3ff4e73fe2a6bf2f8fd399015e.png" width="100%"height="100%"alt="">        </div>
+            <div>
+                <img src="./img/35b3f906861db9d6472206e6d68318d9.jpeg" width="100%"height="100%"alt="">        </div>
+        </div>
 </body>
-
 </html>
